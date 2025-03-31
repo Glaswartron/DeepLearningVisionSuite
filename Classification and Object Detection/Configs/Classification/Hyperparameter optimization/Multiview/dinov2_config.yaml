@@ -1,0 +1,16 @@
+
+model: DINOv2
+dataset: # dataset name
+classification_multiview: true
+results_path: "Results/Multiview classification/..."
+
+hpo:
+  trials: 200
+  use_pruning: true
+  pruning_n_startup_trials: 5
+  pruning_n_warmup_steps: 4
+
+training:
+  epochs: 100
+  use_early_stopping: true
+  early_stopping_patience: 8

@@ -1,0 +1,37 @@
+# Note that the DL suite does not automatically take the default transforms from here
+# The augmentations here are just for reference, changing them will not change the 
+# ones used by the scripts
+
+random_flip:
+  random_horizontal_flip_prob: 0.5
+  random_vertical_flip_prob: 0.5
+
+color_jitter:
+  color_jitter_brightness: 0.35
+  color_jitter_contrast: 0.35
+  color_jitter_saturation: 0.15
+  color_jitter_hue: 0.15
+
+random_affine:
+  random_affine_degrees: 6
+  random_affine_translate_width: 0.05
+  random_affine_translate_height: 0.05
+  random_affine_scale_min: 0.92
+  random_affine_scale_max: 1.08
+  random_affine_shear: 2.2
+
+random_perspective:
+  random_perspective_distortion_scale: 0.15
+  random_perspective_p: 0.5
+
+random_sharpness_adjustment:
+  random_adjust_sharpness_factor: 0.45
+  random_adjust_sharpness_p: 0.5
+
+gaussian_blur:
+  gaussian_blur_kernel_size: 9
+  gaussian_blur_sigma_min: 0.05
+  gaussian_blur_sigma_max: 1.5
+
+random_histogram_equalization:
+  random_equalize_p: 0.5

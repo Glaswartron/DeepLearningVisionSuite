@@ -1,0 +1,45 @@
+Python 3.11.9
+
+ipykernel
+Lightning 2.4.0 conda-forge
+matplotlib
+numpy
+optuna 4.0.0 conda-forge
+optuna-dashboard 0.16.1 conda-forge
+optuna-integration 4.0.0 conda-forge
+pandas
+pycocotools 2.0.8 conda-forge
+pytorch 2.5.0 py3.11_cuda12.4 pytorch
+(pytorch-cuda 12.4)
+scikit-learn 1.5.1
+torchmetrics 1.5.1 conda-forge
+torchvision 0.20.0
+tensorboard
+grad-cam 1.5.4 conda-forge (caused problems during install in the past)
+
+openpyxl
+ipywidgets
+
+(pytorch-lightning 2.4.0 conda-forge)
+(plotly)
+(seaborn)
+(scipy)
+(pillow)
+
+
+Own env necessary for mmpretrain and mmcv, meaning for SwinTransformerV2
+As long as it still requires torch=2.3.x
+
+
+Installs:
+
+conda install numpy Pandas matplotlib
+conda install pytorch=2.5.0 torchvision=0.20.0 torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia
+conda install ipykernel openpyxl ipywidgets
+conda install scikit-learn=1.5.1
+conda install lightning=2.4.0 -c conda-forge
+conda install -c conda-forge optuna=4.0.0 optuna-dashboard=0.16.1 optuna-integration=4.0.0
+conda install tensorboard
+conda install -c conda-forge torchmetrics
+conda install -c conda-forge pycocotools=2.0.8
+conda install -c conda-forge grad-cam=1.5.4

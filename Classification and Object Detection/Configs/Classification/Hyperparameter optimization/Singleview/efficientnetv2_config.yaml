@@ -1,0 +1,17 @@
+
+model: EfficientNetV2 
+dataset: # dataset name
+classification_multiview: false
+results_path: "Results/Singleview Classification/..."
+
+hpo:
+  trials: 100
+  use_pruning: true
+  pruning_n_startup_trials: 10
+  pruning_n_warmup_steps: 5
+  optuna_database_path: "..."
+
+training:
+  epochs: 100
+  use_early_stopping: true
+  early_stopping_patience: 6

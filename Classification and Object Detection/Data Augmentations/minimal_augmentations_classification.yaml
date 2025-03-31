@@ -1,0 +1,15 @@
+random_flip:
+  random_horizontal_flip_prob: 0.3
+  random_vertical_flip_prob: 0.3
+
+random_affine:
+  random_affine_degrees: 5
+  random_affine_translate_width: 0.05
+  random_affine_translate_height: 0.05
+  random_affine_scale_min: 0.95
+  random_affine_scale_max: 1.05
+  random_affine_shear: 2.0
+
+random_sharpness_adjustment:
+  random_adjust_sharpness_factor: 0.40
+  random_adjust_sharpness_p: 0.3
