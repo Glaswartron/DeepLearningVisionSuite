@@ -1,14 +1,5 @@
 # Custom Deep Learning Vision Suite
-## Content 🗺️
-- Content 🗺️ (you are here)
-- Project summary and disclaimers 👨‍💻
-- Project structure 📝
-- Scripts 💻
-- Structure of HPO results 🔬
-- Model architecture and hierarchy🍕
-- Environment 🐍
 
-## Project summary and disclaimers
 **Diese Skripte und Klassen wurden von mir für meine Bachelorarbeit entwickelt. Sie wurden für bestimmte Use Cases und Datensätze entwickelt und sind für die Anwendung auf andere Datensätze aktuell kaum dokumentiert und getestet. Vor der Veröffentlichung hier wurden Ordner und einzelne Teile der Codebasis entfernt und die Codebasis nicht noch einmal getestet**
 
 Dieses Projekt ist ein Toolkit für Image Classification und Object Recognition mithilfe von Transfer Learning auf Basis von [PyTorch](https://pytorch.org/), [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/) und [Optuna](https://optuna.org/). Es stellt **Skripte für das Training, die Hyperparameteroptimierung, den Test und die Bereitstellung (TorchScript) von Modellen** bereit. Ziel waren zudem eine verallgemeinerbare und erweiterbare Architektur sowie nachverfolgbare Ergebnisse auch bei vielen verschiedenen Trainings/HPO-Durchläufen. Unterstützt werden **Binary und Multiclass Classification**, insbesondere auch **Multi-View-Classification mit mehreren Bildern** auf einmal sowie **Object Detection**. Aktuell sind als Modelle insbesondere [DINOv2](https://dinov2.metademolab.com/) und [EfficientNetV2](https://pytorch.org/vision/main/models/efficientnetv2.html) für die Bildklassifikation und [Mask R-CNN](https://pytorch.org/vision/main/models/mask_rcnn.html) für die Objekterkennung implementiert.
@@ -16,6 +7,14 @@ Dieses Projekt ist ein Toolkit für Image Classification und Object Recognition 
 **These scripts and classes were developed by me for my bachelor's thesis. They were developed for specific use cases and data sets and are currently hardly tested and document for application to other data sets. Before publication some folders and singular parts of the codebase were removed and the codebase was not tested again**
 
 This project is a toolkit for image classification and object recognition using transfer learning based on [PyTorch](https://pytorch.org/), [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/) and [Optuna](https://optuna.org/). It provides **scripts for training, hyperparameter optimization, testing and deployment (TorchScript) of models**. The goal was also a generalizable and extensible architecture as well as traceable results even with many different training/HPO runs. **Binary and multiclass classification** are supported, in particular also **multi-view classification with multiple images** at once as well as **object detection**. The models currently implemented are [DINOv2](https://dinov2.metademolab.com/) and [EfficientNetV2](https://pytorch.org/vision/main/models/efficientnetv2.html) for image classification and [Mask R-CNN](https://pytorch.org/vision/main/models/mask_rcnn.html) for object recognition.
+
+## Content 🗺️
+- Content 🗺️ (you are here)
+- Project structure 📝
+- Scripts 💻
+- Structure of HPO results 🔬
+- Model architecture and hierarchy🍕
+- Environment 🐍
 
 ## Project structure 📝
 _(important things are  **bold**)_
